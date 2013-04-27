@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+	* {
+		border:1px dashed blue;
+	}
+	body {
+		background-color: red;
+	}
+
+	#title {
+		height: 300px;
+		width: 300px;
+	}
+
+	.info {
+		font-family: Courier;
+	}
+
+	#output-panel {
+		height: 200px;
+		width: 100px;
+	}
+
+	.row:first-child {
+		display: inline-block;
+		font-style: italic;
+	}
+
+	</style>
 </head>
 
 <body>
 
-	<h1>Hello World this is my website!</h1>
+	<div class="row">
+		<div id="title">
+			<h1>Hello World this is my website!</h1>
+		</div>
 
-	<p>My first paragraph.</p>
+		<div>
+			<p>My first paragraph.</p>
+		</div>
+	</div>
+
+	<div id="output-panel">
+		<p class="info">Interest Rate: 3.8%</p>
+		<p class="info">Principal: $5000</p>
+		<p class="info">Amount Earned: $200</p>
+	</div>
+
+
 
 </body>
 </html>
+
